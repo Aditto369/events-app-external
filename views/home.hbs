@@ -1,16 +1,9 @@
-<ul >
+<table class="addevent">
   {{#events}}
-    <!--<li>
-        <h2>{{ title }}</h2>
-        <p>{{description}}</p>
-        <p><a href="#">Like</a>
-    </li>-->
-    <table>
-        <h2>{{title}}</h2>
-        <a href="google.com">Like</a>
-        <tr>
-            <td>{{description}}</td>
-        </tr>
-    </table>
+    <tr><td>
+        <h2>{{ title }}</h2></td>
+        <tr><td><p>{{ description }}</p></td>
+		<tr><td><input class="btn btn-primary submit-but" type="submit" name="like" value="Like" /></td>
+    </tr>
   {{/events}}
-</ul>
+</table>
